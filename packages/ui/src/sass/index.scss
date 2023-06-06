@@ -1,0 +1,14 @@
+@layer components, vendor, anonymous;
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e2e2e2;
+}
+
+@layer vendor {
+    .ot-my-component {
+       // font-size: 12px;
+    }
+}
+

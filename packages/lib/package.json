@@ -1,0 +1,38 @@
+{
+    "name": "@mytest/lib",
+    "version": "1.0.0",
+    "scripts": {
+        "build": "vite build",
+        "serve": "vite build --watch",
+        "clean": "rimraf ./dist"
+    },
+    "type": "module",
+    "files": [
+        "dist",
+        "fonts/**/*",
+        "src/sass/**/*"
+    ],
+    "module": "./dist/index.js",
+    "exports": {
+        ".": {
+            "import": "./dist/index.js"
+        },
+        "./style.css": "./dist/style.css",
+        "./fonts/": "./fonts/",
+        "./gfx/": "./gfx/",
+        "./sass/": "./src/sass/"
+    },
+    "types": "./dist/index.d.ts",
+    "devDependencies": {
+        "@types/node": "^20.2.5",
+        "@vitejs/plugin-vue": "^4.2.3",
+        "rimraf": "^5.0.1",
+        "sass": "^1.62.1",
+        "typescript": "^5.1.3",
+        "vite": "^4.3.9",
+        "vite-plugin-dts": "^2.3.0"
+    },
+    "dependencies": {
+        "vue": "^3.3.4"
+    }
+}
